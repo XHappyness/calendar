@@ -1,0 +1,184 @@
+*{
+	margin:0;
+	padding: 0;
+}
+body{
+	text-align:center;
+	font-size: 10%;
+}
+span{
+	font-size:25px;
+	font-weight:bold;
+}
+
+/*总模块*/
+.container{
+	margin:30px auto;
+	 background-color:  #D2D2D2; 
+	width:540px;
+	height:424px;
+}
+
+
+/*上面时间块*/
+.timeHead{
+	background-color: #F4F5FA;
+	width:100%;
+	height:9%;
+}
+/* 年月份选择 */
+.chose{
+	/* border-bottom:1px solid #D2D2D2; */
+	/* background-color: #3BC16F; */
+	/* width:102px; */
+	height:60%;
+	float:left;
+	margin-right:4px;
+	margin-left:4px;
+	margin-top:10px;
+}
+/* 右上角的时间显示区域 */
+.writeTime{
+	/* background-color: #3BC16F; */
+    width:24%;
+	height:60%;
+	float:right;
+	margin-right:6px;
+	margin-top:10px;
+	font-size: 14px;
+	color: #9595A2;
+}
+
+
+/*左边日历显示区域*/
+.timeLeft{
+	/* background-color: #A7C1DC; */
+	/* border:1px solid #D2D2D2; */
+	width:74.1%;
+	height:91.1%; 
+	float:left;
+}
+ /*右边选择日期容器  */
+.timeRight{
+	/* background-color: #F6E78E; */
+	border:1px solid #D2D2D2;
+	border-left:0;
+	width:25.7%;
+	height:90%;
+	float:left;
+}
+/* 右边选择日期显示详情 */
+.timeRightTop{
+	background-color: #FFFFFF;
+	border-bottom:1px solid #D2D2D2;
+	width:100%;
+	height:47%;
+	padding-top:5%;
+}
+.timeRightTop .timeRightTop1{
+	font-size: 13px;
+	height:15%;
+}
+.timeRightTop .animals{
+	/* background-color: yellow; */
+	height:50%;
+	background-repeat:no-repeat;
+	background-position:center center;
+	/* font-size:100px;
+	color:red;
+	font-weight: bolder; */
+}
+.timeRightTop .datedetail{
+	/* background-color: pink; */
+	text-align:center;
+	font-size: 13px;
+	margin-top:12%;
+}
+.datedetail span{
+	font-size: 13px;
+}
+/* 右边选择日期禁忌等 */
+.timeRightBottom{
+	background-color: #FFFFFF;
+	width:100%;
+	height:51.5%;
+	border-bottom: 1px solid #D2D2D2;
+}
+
+
+
+
+
+
+
+/* 日历表格 */
+.tb1{
+	/* border:1px; */
+	width:100%;
+	height:100%; 
+	text-align: center;
+}
+td{
+	width:14%;
+	
+	/* position:relative;  */
+	font-size: 18px;
+	padding:0;
+}
+.tb1 .tr1{
+	background-color: #FFFFFF;
+	font-weight: bolder;
+}
+.tb1 .trWeek{
+	background-color: #FFF2EA;
+	font-weight: bold;
+	height:15%;
+}
+.tb1 .trWeek .weekend{
+	color: #C50009;
+}
+
+td:hover{background:#FFF2EA ;}
+
+/* 如果日期为今天的话，加上今天的标记 */
+.today{		
+	background-image: url(images\\today.png);
+	background-repeat:no-repeat;
+}
+/* 如果日期为假日的话，加上假日的标记 */
+.jia{		
+	background-image: url(images\\jia.png);
+	background-repeat:no-repeat;
+}
+/* 如果日期为今天并且是假日的话，加上相应的标记 */
+.todayjia{		
+	background-image: url(images\\todayjia.png);
+	background-repeat:no-repeat;
+}
+/*显示阴历的div块*/
+.ld{
+	/*  background-color: yellow; */
+	 height:30%;
+	 margin:2px auto; 
+	 margin-bottom:0;  
+	 font-size:13px;
+	 font-weight: bold;
+	 color:#989898;
+	 /* margin-top:4%; */
+	 /* position:absolute;
+	 left:12px;
+	 top:36px;  */
+	 
+}
+ 
+
+/*对不同的显示屏*/
+@media screen and (max-device-width: 480px) { 
+#divMain{ 
+float: none; 
+width:auto; 
+} 
+#divSidebar { 
+display:none; 
+} 
+} 

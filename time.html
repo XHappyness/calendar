@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+    	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3"/>
+    	<meta http-equiv="description" content="this is my page"/>
+    	<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1" /> 
+
+		<title>万年历</title>
+        <link href="time.css" type="text/css" rel="Stylesheet" />    
+    </head>
+	<body onload="init()">
+		<span>万年历</span>
+		<div class="container">
+			<div class="timeHead">
+				<div class="chose">
+					<input type="button" value="<" onclick="pushBtm('lastYear')"/>
+					<select id="y" onchange="showDetail()"></select>
+					<input type="button" value=">" onclick="pushBtm('nextYear')"/>
+				</div>
+				<div class="chose">
+					<input type="button" value="<" onclick="pushBtm('lastMonth')"/>
+					<select id="m" onchange="showDetail()"></select>
+					<input type="button" value=">" onclick="pushBtm('nextMonth')"/>
+				</div>
+				<div class="chose"> 
+					<select id="hd" onchange="holliday()">
+						<option value="2016" selected="selected">2016年假日安排</option>
+						<option value="1">元旦</option>
+						<option value="2">春节</option>
+						<option value="4">清明节</option>
+						<option value="5">劳动节</option>
+						<option value="6">端午节</option>
+						<option value="9">中秋节</option>
+						<option value="10">国庆节</option>
+					</select>
+				</div>
+				<div class="chose"> 
+					<input type="button"  value="返回今天" onclick="pushBtm('');holliday1()"/>
+				</div>
+				<div class="writeTime" id="mytime"> </div>
+			</div>
+			<div class="timeLeft">
+				<table id="tb1" class="tb1" border="0" cellpadding="3" cellspacing="1"></table>
+			</div>
+			<div class="timeRight">
+				<div class="timeRightTop" id="timeRightTop">
+					<div class="timeRightTop1" id="timeRightTop1"></div>
+					<div class="animals" id="animals"></div>
+					<div class="datedetail" id="datedetail"></div>
+				</div>
+				<div class="timeRightBottom" id="timeRightBottom">
+					<img src="images\\sun.gif" style="width:100%; height:75%; margin-top:1%;"/><br/><br/>
+					<span style="font-size:12px;color:red;"> &nbsp;祝您天天有个好心情！</span>
+			</div>
+		</div>	
+		
+		
+    <script type="text/javascript" src="time.js"></script>  	
+    </body>
+</html>
